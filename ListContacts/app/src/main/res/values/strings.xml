@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ListContacts</string>
+    <string name="Save">Сохранить</string>
+    <string name="Cancel">Отмена</string>
+</resources>

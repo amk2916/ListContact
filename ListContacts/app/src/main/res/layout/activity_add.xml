@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.feature.listcontacts.MainActivity">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/enterName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/enterName"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/contact_pic"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/phone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/phone"
+        android:src="@drawable/phone"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="130dp"
+        android:layout_marginStart="@dimen/margin_horis"
+        android:layout_marginEnd="50dp"
+        app:boxBackgroundColor = "@android:color/black"
+        app:startIconTint = "@android:color/holo_blue_dark"
+        app:endIconTint = "@android:color/holo_green_dark"
+        app:boxStrokeColor = "@color/purple_700"
+        android:hint="Введите имя"
+        app:hintTextColor = "@android:color/holo_red_dark"
+        app:endIconMode = "clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/enterSecondName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterName"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="70dp"
+        app:boxBackgroundColor = "@android:color/black"
+        app:startIconTint = "@android:color/holo_blue_dark"
+        app:endIconTint = "@android:color/holo_green_dark"
+        app:boxStrokeColor = "@color/purple_700"
+        android:hint="Введите фамилию"
+        app:hintTextColor = "@android:color/holo_red_dark"
+        app:endIconMode = "clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enterSecondNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone"
+        app:startIconDrawable="@drawable/phone"
+        app:endIconDrawable="@drawable/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/enterSecondName"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="70dp"
+        app:boxBackgroundColor = "@android:color/black"
+        app:endIconTint = "@android:color/holo_green_dark"
+        app:boxStrokeColor = "@color/purple_700"
+        android:hint="Номер телефона"
+        app:hintTextColor = "@color/purple_700"
+        app:endIconMode = "clear_text">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:backgroundTint="@android:color/white"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/Save"
+        android:backgroundTint="@android:color/holo_blue_dark"/>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/Cancel"
+        android:backgroundTint="@android:color/holo_blue_dark"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
